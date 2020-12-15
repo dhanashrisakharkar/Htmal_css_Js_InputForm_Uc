@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic input types</title>
+  <link rel="stylesheet" href="../css/Simple_Form.css">
+</head>
+
+<body>
+  <form>
+    <header class="headerContainer">
+      <h1>HTML Input Form Fields</h1>
+    </header>
+    <div>
+      <label form="text">text input type for Name:</label>
+      <input type="text" id="text" name="text" required>
+      <error-output class="text-error" for="text"></error-output>
+    </div>
+    <div>
+      <label for="pwd">password input type:</label>
+      <input type="pwd" id="pwd" name="pwd" required>
+      <error-output class="pwd-error" for="pwd"></error-output>
+    </div>
+    <div>
+      <label for="email">email input type:</label>
+      <input type="email" id="email" name="email" required>
+      <error-output class="email-error" for="email"></error-output>
+    </div>
+    <div>
+      <label for="url">url input type</label>
+      <input type="url" id="url" name="url" required>
+      <error-output class="url-error" for="url"></error-output>
+    </div>
+    <div>
+      <label for="number">number input type:</label>
+      <input type="number" id="number" name="number" required>
+      <error-output class="number-error" for="number"></error-output>
+    </div>
+    <div>
+      <label for="te">tel input is:</label>
+      <input type="tel " id="tel" name="tel" required>
+      <error-output class="tel-error" for="tel"></error-output>
+    </div>
+    <div>
+      <label for="search">search input type:</label>
+      <input type="search" id="search" name="search" required>
+      <error-output class="search-error" for="search"></error-output>
+    </div>
+
+    <div class="nativeDateTimePicker">
+      <label for="startDate">Choose a Date and time:</label>
+      <input type="datetime-local" id="startDate" name="startDate">
+      <span class="validity"></span>
+    </div>
+    <div>
+      <label for="salary">Choose your salery:</label>
+      <input type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="350000">
+      <output class="salary-output" for="salary">400000</output>
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+  <script src="../js/Sample_InpurForm.js"></script>
+</body>
+
+</html>
